@@ -1,4 +1,4 @@
-# Team challenge chat application
+# Team Challenge chat application
 
 To quickly start with the project, do the following:
 
