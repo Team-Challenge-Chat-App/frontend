@@ -4,5 +4,8 @@
             "main": true,
             "*": false
         }
+    },
+    "github": {
+        "autoJobCancelation": true
     }
 }
