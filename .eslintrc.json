@@ -1,41 +1,34 @@
 {
-    "root": true,
-    "env": {
-        "browser": true,
-        "es2020": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react-hooks/recommended"
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "ignorePatterns": ["dist", ".eslintrc.json"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react-refresh", "@typescript-eslint", "simple-import-sort"],
+  "rules": {
+    "react-refresh/only-export-components": [
+      "warn",
+      {
+        "allowConstantExport": true
+      }
     ],
-    "ignorePatterns": ["dist", ".eslintrc.json"],
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-        "react-refresh",
-        "@typescript-eslint",
-        "unicorn",
-        "simple-import-sort"
+    "no-console": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
     ],
-    "rules": {
-        "react-refresh/only-export-components": [
-            "warn",
-            {
-                "allowConstantExport": true
-            }
-        ],
-        "no-console": "error",
-        "no-multiple-empty-lines": [
-            "error",
-            {
-                "max": 1
-            }
-        ],
-        "max-params": ["error", 3],
-        "@typescript-eslint/no-explicit-any": "off",
-        "simple-import-sort/imports": "error",
-        "simple-import-sort/exports": "error",
-        "unicorn/prevent-abbreviations": "off",
-        "unicorn/no-null": "off"
-    }
+    "max-params": ["error", 3],
+    "@typescript-eslint/no-explicit-any": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  }
 }
