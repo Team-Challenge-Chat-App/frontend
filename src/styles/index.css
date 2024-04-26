@@ -1,12 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .btn-teal {
-    @apply m-2.5 flex  h-12 w-28  items-center justify-evenly rounded-lg bg-teal-500 p-3 text-white hover:bg-teal-400 active:bg-teal-600;
-  }
-  .btn-neutral {
-    @apply m-2.5 flex h-12 w-28 items-center justify-evenly rounded-lg border-2 border-white bg-neutral-400 p-3 text-white hover:bg-neutral-50 hover:fill-black hover:text-black   active:bg-neutral-200 active:text-black;
-  }
-}
