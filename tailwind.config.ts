@@ -12,6 +12,10 @@ export default {
         btnSecondaryHover: 'var(--button-secondary-hover)',
         btnSecondaryActive: 'var(--button-secondary-active)',
       },
+      borderColor: {
+        btnSecondary: 'var(--button-secondary-border)',
+        btnSecondaryHover: 'var(--button-secondary-border-hover)',
+      },
     },
   },
   plugins: [],

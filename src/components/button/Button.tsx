@@ -9,7 +9,7 @@ enum ButtonVariant {
 const buttonVariantClasses: Record<ButtonVariant, string> = {
   primary: 'bg-btnPrimary hover:bg-btnPrimaryHover active:bg-btnPrimaryActive',
   secondary:
-    'bg-btnSecondary hover:bg-btnSecondaryHover active:bg-btnSecondaryActive',
+    'bg-btnSecondary hover:bg-btnSecondaryHover active:bg-btnSecondaryActive border border-btnSecondary hover:border-btnSecondaryHover',
 };
 
 type Properties = {

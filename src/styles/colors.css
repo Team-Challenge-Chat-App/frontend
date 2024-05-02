@@ -1,9 +1,16 @@
 :root {
-  --button-primary: rgb(0, 160, 139, 1);
+  --color-primary: rgb(0, 160, 139, 1);
+
+  --background-300: rgba(69, 92, 92, 1);
+  --background-400: rgba(79, 105, 105, 1);
+
+  --button-primary: var(--color-primary);
   --button-primary-hover: rgb(21, 194, 172, 1);
   --button-primary-active: rgba(13, 121, 107, 1);
 
   --button-secondary: rgb(59, 79, 79, 1);
   --button-secondary-hover: rgb(79, 105, 105, 1);
   --button-secondary-active: rgb(39, 52, 52, 1);
+  --button-secondary-border: var(--background-400);
+  --button-secondary-border-hover: var(--background-300);
 }
