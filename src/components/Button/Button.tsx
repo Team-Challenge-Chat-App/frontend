@@ -22,12 +22,7 @@ type Properties = {
 const defaultClasses =
   'rounded-md px-7 py-4 text-white w-full transition-colors font-semibold';
 
-export default function Button({
-  text,
-  startIcon,
-  variant,
-  onClick,
-}: Properties) {
+function Button({ text, startIcon, variant, onClick }: Properties) {
   return (
     <button
       className={twMerge(defaultClasses, buttonVariantClasses[variant])}
@@ -39,4 +34,4 @@ export default function Button({
   );
 }
 
-export { ButtonVariant };
+export { Button, ButtonVariant };
