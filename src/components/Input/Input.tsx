@@ -4,6 +4,7 @@ type Properties = {
   value?: string;
   onChange?: () => void;
   name?: string;
+  type?: string;
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
   placeholder?: string;
@@ -16,9 +17,10 @@ function Input({
   leftIcon,
   rightIcon,
   placeholder,
+  type = 'text',
 }: Properties) {
   return (
-    <div className="flex rounded-md bg-bg300 px-7 py-4 text-white focus-within:bg-bg400">
+    <div className="flex rounded-md bg-300 px-7 py-4 text-white focus-within:bg-400">
       {leftIcon}
       <input
         className="w-full bg-transparent outline-none focus:placeholder-white"
@@ -26,6 +28,7 @@ function Input({
         name={name}
         onChange={onChange}
         placeholder={placeholder}
+        type={type}
       />
       {rightIcon}
     </div>
