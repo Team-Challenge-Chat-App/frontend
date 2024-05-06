@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 
+import { AppRoutes } from '@/common/enums';
 import { RouterProvider } from '@/lib/router/RouterProvider.tsx';
 import { store } from '@/lib/store/store.ts';
 import { AuthPage } from '@/pages';
@@ -16,15 +17,15 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <RouterProvider
         routes={[
           {
-            path: '/',
+            path: AppRoutes.ROOT,
             element: <App />,
             children: [
               {
-                path: '/login',
+                path: AppRoutes.LOGIN,
                 element: <AuthPage />,
               },
               {
-                path: '/register',
+                path: AppRoutes.REGISTER,
                 element: <AuthPage />,
               },
             ],
