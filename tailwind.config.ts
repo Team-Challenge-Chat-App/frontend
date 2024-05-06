@@ -2,11 +2,15 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['Fira Sans', 'sans-serif'],
+    },
     extend: {
       backgroundColor: {
-        bg200: 'var(--background-200)',
-        bg300: 'var(--background-300)',
-        bg400: 'var(--background-400)',
+        primary: 'var(--background-primary)',
+        200: 'var(--background-200)',
+        300: 'var(--background-300)',
+        400: 'var(--background-400)',
 
         btnPrimary: 'var(--button-primary)',
         btnPrimaryHover: 'var(--button-primary-hover)',
