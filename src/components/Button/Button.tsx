@@ -15,17 +15,28 @@ const buttonVariantClasses: Record<ButtonVariant, string> = {
 type Properties = {
   text: string;
   startIcon?: ReactNode;
-  variant: ButtonVariant;
-  onClick: () => void;
+  variant?: ButtonVariant;
+  onClick?: () => void;
+  className?: string;
 };
 
-const defaultClasses =
-  'rounded-md px-7 py-4 text-white w-full transition-colors font-semibold';
+const defaultClasses = `flex rounded-md px-7 py-4 text-white 
+  transition-colors gap-2 items-center justify-center align-middle`;
 
-function Button({ text, startIcon, variant, onClick }: Properties) {
+function Button({
+  text,
+  startIcon,
+  variant = ButtonVariant.PRIMARY,
+  onClick,
+  className,
+}: Properties) {
   return (
     <button
-      className={twMerge(defaultClasses, buttonVariantClasses[variant])}
+      className={twMerge(
+        defaultClasses,
+        buttonVariantClasses[variant],
+        className,
+      )}
       onClick={onClick}
     >
       {startIcon}
