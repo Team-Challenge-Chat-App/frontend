@@ -5,12 +5,17 @@ export default {
     fontFamily: {
       sans: ['Fira Sans', 'sans-serif'],
     },
+    textColor: {
+      base: 'white',
+    },
     extend: {
       backgroundColor: {
-        primary: 'var(--background-primary)',
-        200: 'var(--background-200)',
-        300: 'var(--background-300)',
-        400: 'var(--background-400)',
+        primary: 'var(--color-primary)',
+
+        bgPrimary: 'var(--background-primary)',
+        bg200: 'var(--background-200)',
+        bg300: 'var(--background-300)',
+        bg400: 'var(--background-400)',
 
         btnPrimary: 'var(--button-primary)',
         btnPrimaryHover: 'var(--button-primary-hover)',
@@ -21,6 +26,8 @@ export default {
         btnSecondaryActive: 'var(--button-secondary-active)',
       },
       borderColor: {
+        primary: 'var(--color-primary)',
+
         btnSecondary: 'var(--button-secondary-border)',
         btnSecondaryHover: 'var(--button-secondary-border-hover)',
       },
