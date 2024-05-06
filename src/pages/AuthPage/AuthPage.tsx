@@ -1,13 +1,23 @@
+import { useLocation } from 'react-router-dom';
+
+import { AppRoutes } from '@/common/enums';
 import { Layout } from '@/components';
-import LoginForm from '@/pages/AuthPage/components/LoginForm/LoginForm.tsx';
+
+import { AuthSwitch, LoginForm, RegisterForm } from './components';
 
 function AuthPage() {
+  const location = useLocation();
+
+  const isLogin = location.pathname === AppRoutes.LOGIN;
+
   return (
-    <Layout className="h-screen justify-center">
-      <div className="flex h-20 w-20 items-center justify-center bg-primary text-2xl">
-        💪
+    <Layout className="h-screen justify-center gap-8">
+      <AuthSwitch />
+      <div className="flex h-[260px] w-[260px] items-center justify-center bg-bg200 text-2xl">
+        Logo
       </div>
-      <LoginForm />
+      <p>Goida</p>
+      {isLogin ? <LoginForm /> : <RegisterForm />}
     </Layout>
   );
 }
